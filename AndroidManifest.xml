@@ -40,7 +40,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.digitalpath.installermon.SplashScreenActivity" />
         </activity>
-        
         <activity
             android:name="com.digitalpath.installermon.SurveyActivity"
             android:label="@string/title_activity_survey"
@@ -52,7 +51,12 @@
         </activity>
         <activity
             android:name="com.digitalpath.installermon.OptionsActivity"
-            android:label="@string/title_activity_options" 
+            android:label="@string/title_activity_options"
+            android:theme="@style/Theme.GenericMenu" >
+        </activity>
+        <activity
+            android:name="com.digitalpath.installermon.UsernameActivity"
+            android:label="@string/title_activity_username"
             android:theme="@style/Theme.GenericMenu" >
         </activity>
     </application>

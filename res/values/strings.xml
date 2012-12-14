@@ -17,5 +17,7 @@
     <string name="activity_options_debug_button_on">Debug On</string>
     <string name="activity_options_debug_button_off">Debug Off</string>
     <string name="activity_options_username_button_text">Username</string>
+    <string name="title_activity_username">UsernameActivity</string>
+    <string name="username_activity_header_text">Username &amp; Password</string>
 
 </resources>

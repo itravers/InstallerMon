@@ -13,8 +13,7 @@ public class OptionsActivity extends Activity {
 	
 	public static final String SAVED_DATA = "SavedDataFile";
 	
-	SharedPreferences settings;
-	SharedPreferences.Editor settingsEditor;
+	Settings settings;
 	ToggleButton debugButton;
 
 	@Override
@@ -22,9 +21,8 @@ public class OptionsActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_options);
 		debugButton = (ToggleButton) findViewById(R.id.activity_options_debug_button);
-		settings = getSharedPreferences(SAVED_DATA, 0);
-		settingsEditor = settings.edit();
-		debugButton.setChecked(settings.getBoolean("isDebugging", false));
+		settings = new Settings(this);
+		debugButton.setChecked(settings.getBoolean("isDebugging"));
 	}
 
 	@Override
@@ -37,15 +35,19 @@ public class OptionsActivity extends Activity {
 	public void debugClicked(View view){
 		String message = "";
 		if(debugButton.isChecked()){
-			settingsEditor.putBoolean("isDebugging", true);
+			settings.setBoolean("isDebugging", true);
 			message = "Debug Turned On";
 		}else{
-			settingsEditor.putBoolean("isDebugging", false);
+			settings.setBoolean("isDebugging", false);
 			message = "Debug Turned Off";
 		}
-		settingsEditor.commit();
 		Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-		
+	}
+	
+	public void usernameClicked(View view){
+		 Intent intent = new Intent();
+         intent.setClass(this, UsernameActivity.class);
+         startActivity(intent);
 	}
 
 }

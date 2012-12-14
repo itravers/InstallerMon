@@ -1,0 +1,82 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/username_activity_relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/username_activity_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/username_activity_header_text" />
+
+            <ImageView
+                android:id="@+id/username_activity_imageView1"
+                android:layout_width="170dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/dplogo" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/username_activity_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/username_activity_relativeLayout1"
+            android:text="User Name"/>
+
+        <EditText
+            android:id="@+id/username_activity_editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/username_activity_textView1"
+            android:layout_alignBottom="@+id/username_activity_textView1"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/username_activity_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/username_activity_editText1"
+            android:layout_marginTop="20dp"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/username_activity_editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username_activity_editText1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/username_activity_textView2"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/username_activity_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/username_activity_editText2"
+            android:layout_toLeftOf="@+id/username_activity_editText2"
+            android:text="Submit" />
+
+    </RelativeLayout>

@@ -47,7 +47,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="6dp"
                 android:layout_marginRight="6dp"
-                android:onClick="surveyClicked"
+                android:onClick="usernameClicked"
                 android:text="@string/activity_options_username_button_text" />
 
             <ToggleButton

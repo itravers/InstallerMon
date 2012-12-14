@@ -34,10 +34,18 @@ public final class R {
         public static final int activity_survey_imageView1=0x7f08000f;
         public static final int activity_survey_relativeLayout1=0x7f08000d;
         public static final int imageView1=0x7f080007;
-        public static final int menu_settings=0x7f080010;
+        public static final int menu_settings=0x7f080018;
         public static final int options_activity_header=0x7f080006;
         public static final int relativeLayout1=0x7f080005;
         public static final int relativeLayout2=0x7f080008;
+        public static final int username_activity_button1=0x7f080017;
+        public static final int username_activity_editText1=0x7f080014;
+        public static final int username_activity_editText2=0x7f080016;
+        public static final int username_activity_header=0x7f080011;
+        public static final int username_activity_imageView1=0x7f080012;
+        public static final int username_activity_relativeLayout1=0x7f080010;
+        public static final int username_activity_textView1=0x7f080013;
+        public static final int username_activity_textView2=0x7f080015;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -45,9 +53,11 @@ public final class R {
         public static final int activity_options=0x7f030002;
         public static final int activity_splash_screen=0x7f030003;
         public static final int activity_survey=0x7f030004;
+        public static final int activity_username=0x7f030005;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;
+        public static final int activity_username=0x7f070001;
     }
     public static final class string {
         public static final int activity_options_debug_button_off=0x7f05000e;
@@ -66,6 +76,8 @@ public final class R {
         public static final int title_activity_options=0x7f05000a;
         public static final int title_activity_splash_screen=0x7f050003;
         public static final int title_activity_survey=0x7f050007;
+        public static final int title_activity_username=0x7f050010;
+        public static final int username_activity_header_text=0x7f050011;
     }
     public static final class style {
         public static final int Animations=0x7f060002;
