@@ -20,19 +20,50 @@
    
 	
     <style name="Animations" parent="@android:Animation" />
-	    <style name="Animations.SplashScreen">
+	    <style name="Animations.FadeInOut">
 	        <item name="android:windowEnterAnimation">@anim/appear</item>
 	        <item name="android:windowExitAnimation">@anim/disappear</item> 
 	    </style>
+	    
+	<style name="Animations" parent="@android:Animation" />
+	    <style name="Animations.SlideRightEnterExit">
+	        <item name="android:windowEnterAnimation">@anim/slide_right_enter</item>
+	        <item name="android:windowExitAnimation">@anim/slide_right_exit</item> 
+	    </style>
+	    
+	<style name="Animations" parent="@android:Animation" />
+	    <style name="Animations.SlideRightExit">
+	        <item name="android:windowExitAnimation">@anim/slide_right_exit</item> 
+	    </style>
+	    
+	<style name="Animations" parent="@android:Animation" />
+	    <style name="Animations.FadeIn">
+	        <item name="android:windowEnterAnimation">@anim/appear</item>
+	    </style>
+	    
+	<style name="Animations" parent="@android:Animation" />
+	    <style name="Animations.FadeOut">
+	        <item name="android:windowExitAnimation">@anim/disappear</item> 
+	    </style>  
+	    
+	 <style name="Theme.MainMenu" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/Animations.SlideRightExit</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+        
+    <style name="Theme.GenericMenu" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/Animations.SlideRightEnterExit</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
     
     <style name="Theme.Transparent" parent="android:Theme">
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">false</item>
-        <item name="android:windowAnimationStyle">@style/Animations.SplashScreen</item>
+        <item name="android:windowAnimationStyle">@style/Animations.FadeInOut</item>
     </style> 
     
     

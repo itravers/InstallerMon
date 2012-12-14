@@ -20,7 +20,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:text="@string/options_activity_header_text"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                 />
 
             <ImageView
                 android:id="@+id/imageView1"
