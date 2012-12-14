@@ -22,6 +22,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.digitalpath.installermon.SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:parentActivityName="com.digitalpath.installermon.MainActivity"
+            android:theme="@style/Theme.Transparent" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.digitalpath.installermon.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.digitalpath.installermon.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName="com.digitalpath.installermon.SplashScreenActivity"
+            android:theme="@style/Theme.MainMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.digitalpath.installermon.SplashScreenActivity" />
+        </activity>
+        
+        <activity
+            android:name="com.digitalpath.installermon.SurveyActivity"
+            android:label="@string/title_activity_survey"
+            android:parentActivityName="com.digitalpath.installermon.MenuActivity"
+            android:theme="@style/Theme.GenericMenu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.digitalpath.installermon.MenuActivity" />
+        </activity>
+        <activity
+            android:name="com.digitalpath.installermon.OptionsActivity"
+            android:label="@string/title_activity_options" 
+            android:theme="@style/Theme.GenericMenu" >
+        </activity>
     </application>
 
 </manifest>

@@ -15,12 +15,11 @@
                 android:id="@+id/options_activity_header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="6dp"
-                android:paddingTop="6dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:text="@string/options_activity_header_text"
-                 />
+                android:paddingLeft="6dp"
+                android:paddingTop="6dp"
+                android:text="@string/options_activity_header_text" />
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -32,14 +31,39 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/relativeLayout2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/relativeLayout1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="6dp" >
 
-           
+            <Button
+                android:id="@+id/activity_options_username_button"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:onClick="surveyClicked"
+                android:text="@string/activity_options_username_button_text" />
 
+            <ToggleButton
+                android:id="@+id/activity_options_debug_button"
+                android:textOn="@string/activity_options_debug_button_on"
+                android:textOff="@string/activity_options_debug_button_off"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:onClick="debugClicked" />
         </RelativeLayout>
+
+       
 
     </RelativeLayout>
