@@ -25,4 +25,13 @@ public class Settings {
 		settingsEditor.putBoolean(key, value);
 		settingsEditor.commit();
 	}
+	
+	public String getString(String key, String defaultValue){
+		return settings.getString(key, defaultValue);
+	}
+	
+	public void setString(String key, String value){
+		settingsEditor.putString(key, value);
+		settingsEditor.commit();
+	}
 }

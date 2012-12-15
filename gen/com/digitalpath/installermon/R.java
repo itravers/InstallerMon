@@ -30,22 +30,25 @@ public final class R {
         public static final int activity_menu_survey_button=0x7f080003;
         public static final int activity_options_debug_button=0x7f08000a;
         public static final int activity_options_username_button=0x7f080009;
+        public static final int activity_survey_clickToSurveyButton=0x7f080010;
         public static final int activity_survey_header=0x7f08000e;
         public static final int activity_survey_imageView1=0x7f08000f;
         public static final int activity_survey_relativeLayout1=0x7f08000d;
         public static final int imageView1=0x7f080007;
-        public static final int menu_settings=0x7f080018;
+        public static final int menu_settings=0x7f08001b;
         public static final int options_activity_header=0x7f080006;
         public static final int relativeLayout1=0x7f080005;
         public static final int relativeLayout2=0x7f080008;
-        public static final int username_activity_button1=0x7f080017;
-        public static final int username_activity_editText1=0x7f080014;
-        public static final int username_activity_editText2=0x7f080016;
-        public static final int username_activity_header=0x7f080011;
-        public static final int username_activity_imageView1=0x7f080012;
-        public static final int username_activity_relativeLayout1=0x7f080010;
-        public static final int username_activity_textView1=0x7f080013;
-        public static final int username_activity_textView2=0x7f080015;
+        public static final int username_activity_cancelButton=0x7f08001a;
+        public static final int username_activity_editText1=0x7f080015;
+        public static final int username_activity_editText2=0x7f080017;
+        public static final int username_activity_header=0x7f080012;
+        public static final int username_activity_imageView1=0x7f080013;
+        public static final int username_activity_linearLayout1=0x7f080018;
+        public static final int username_activity_relativeLayout1=0x7f080011;
+        public static final int username_activity_submitButton=0x7f080019;
+        public static final int username_activity_textView1=0x7f080014;
+        public static final int username_activity_textView2=0x7f080016;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -63,6 +66,7 @@ public final class R {
         public static final int activity_options_debug_button_off=0x7f05000e;
         public static final int activity_options_debug_button_on=0x7f05000d;
         public static final int activity_options_username_button_text=0x7f05000f;
+        public static final int activity_survey_clickToSurveyButtonText=0x7f050014;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050001;
         public static final int menu_activity_header_text=0x7f050008;
@@ -77,7 +81,9 @@ public final class R {
         public static final int title_activity_splash_screen=0x7f050003;
         public static final int title_activity_survey=0x7f050007;
         public static final int title_activity_username=0x7f050010;
+        public static final int username_activity_cancelButton_text=0x7f050013;
         public static final int username_activity_header_text=0x7f050011;
+        public static final int username_activity_submitButton_text=0x7f050012;
     }
     public static final class style {
         public static final int Animations=0x7f060002;

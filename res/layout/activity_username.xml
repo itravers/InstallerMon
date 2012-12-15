@@ -4,7 +4,7 @@
         android:layout_height="fill_parent"
         android:gravity="center_horizontal" >
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/username_activity_relativeLayout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:src="@drawable/dplogo" />
-        </RelativeLayout>
+        </LinearLayout>
 
         <TextView
             android:id="@+id/username_activity_textView1"
@@ -70,13 +70,28 @@
             android:ems="10"
             android:inputType="textPassword" />
 
-        <Button
-            android:id="@+id/username_activity_button1"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/username_activity_linearLayout1"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/username_activity_editText2"
-            android:layout_toLeftOf="@+id/username_activity_editText2"
-            android:text="Submit" />
+            android:layout_below="@+id/username_activity_editText2" >
+
+            <Button
+                android:id="@+id/username_activity_submitButton"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:onClick="submitClicked"
+                android:text="@string/username_activity_submitButton_text" />
+
+            <Button
+                android:id="@+id/username_activity_cancelButton"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:onClick="cancelClicked"
+                android:text="@string/username_activity_cancelButton_text" />
+        </LinearLayout>
 
     </RelativeLayout>

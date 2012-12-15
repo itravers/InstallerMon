@@ -19,5 +19,8 @@
     <string name="activity_options_username_button_text">Username</string>
     <string name="title_activity_username">UsernameActivity</string>
     <string name="username_activity_header_text">Username &amp; Password</string>
+    <string name="username_activity_submitButton_text">Submit</string>
+    <string name="username_activity_cancelButton_text">Cancel</string>
+    <string name="activity_survey_clickToSurveyButtonText">Click To Survey</string>
 
 </resources>

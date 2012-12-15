@@ -2,18 +2,23 @@ package com.digitalpath.installermon;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 import android.support.v4.app.NavUtils;
 
 public class SurveyActivity extends Activity {
+	
+	Settings settings;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_survey);
-		// Show the Up button in the action bar.
-		//getActionBar().setDisplayHomeAsUpEnabled(true);
+		settings = new Settings(this);
+		
 	}
 
 	@Override
@@ -38,6 +43,30 @@ public class SurveyActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	private boolean validateUsername(){
+		String username = settings.getString("username", "none");
+		String password = settings.getString("password", "none");
+		
+		if(username.equals("none") || password.equals("none")){
+			Toast.makeText(this, "Username and/or Password \nNOT SET", Toast.LENGTH_LONG).show();
+			return false;
+		}else{
+			return true;
+		}
+		
+	}
+	
+	public void clickToSurvey(View view){
+		validateUsername();
+		if(validateUsername()){
+			Toast.makeText(this, "Survey Clicked", Toast.LENGTH_LONG).show();
+		}else{
+			Intent intent = new Intent();
+		    intent.setClass(this, UsernameActivity.class);
+		    startActivity(intent);
+		}	
 	}
 
 }
